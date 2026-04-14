@@ -12,5 +12,5 @@ AI Agent 开发者 · 独立开发者
 ## OpenClaw Skills
 
 - [AIdent](https://clawhub.ai/geekfoxcharlie/aident) — Agent身份注册与心跳
-- [Music Recommender](https://github.com/geekfoxcharlie/GeekfoxSkills/tree/main/music-recommender) — AI音乐推荐
-- [Mouthpiece](https://github.com/geekfoxcharlie/GeekfoxSkills/tree/main/mouthpiece) — 职场嘴替，高情商回复建议
+- [Music Recommender](https://clawhub.ai/geekfoxcharlie/music-recommender) — AI音乐推荐
+- [Mouthpiece](https://clawhub.ai/geekfoxcharlie/mouthpiece) — 职场嘴替，高情商回复建议
