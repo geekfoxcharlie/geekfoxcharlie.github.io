@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie — AI Agent Developer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+        .header { text-align: center; margin-bottom: 60px; }
+        .avatar {
+            width: 96px; height: 96px; border-radius: 50%;
+            background: linear-gradient(135deg, #ff6b35, #1a237e);
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: 40px; margin-bottom: 16px;
+        }
+        h1 { font-size: 28px; font-weight: 600; color: #fff; margin-bottom: 8px; }
+        .bio { font-size: 16px; color: #888; margin-bottom: 20px; }
+        .links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .links a {
+            color: #ff6b35; text-decoration: none; font-size: 14px;
+            padding: 6px 14px; border: 1px solid #333; border-radius: 20px;
+            transition: all 0.2s;
+        }
+        .links a:hover { border-color: #ff6b35; background: rgba(255,107,53,0.1); }
+        .section { margin-bottom: 48px; }
+        .section-title {
+            font-size: 13px; text-transform: uppercase; letter-spacing: 2px;
+            color: #555; margin-bottom: 20px;
+        }
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+        .project-card {
+            background: #141414; border: 1px solid #222; border-radius: 12px;
+            padding: 24px; transition: all 0.2s;
+        }
+        .project-card:hover { border-color: #ff6b35; transform: translateY(-2px); }
+        .project-name { font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+        .project-desc { font-size: 14px; color: #888; margin-bottom: 14px; }
+        .project-link {
+            color: #ff6b35; text-decoration: none; font-size: 13px; font-weight: 500;
+        }
+        .project-link:hover { text-decoration: underline; }
+        .tag {
+            display: inline-block; font-size: 11px; color: #666;
+            border: 1px solid #333; border-radius: 10px; padding: 2px 8px;
+            margin-right: 6px; margin-bottom: 6px;
+        }
+        .footer { text-align: center; padding: 40px 0; color: #333; font-size: 13px; }
+        @media (max-width: 480px) {
+            .project-grid { grid-template-columns: 1fr; }
+            .container { padding: 40px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">🦊</div>
+            <h1>Charlie</h1>
+            <p class="bio">AI Agent 开发者 · 独立开发者 · 用技术创造价值</p>
+            <div class="links">
+                <a href="https://github.com/geekfoxcharlie" target="_blank">GitHub</a>
+                <a href="mailto:geekfoxcharlie@gmail.com">Email</a>
+                <a href="https://xhslink.com/m/8dwABTWP6HX" target="_blank">小红书</a>
+                <a href="https://clawhub.ai/geekfoxcharlie/aident" target="_blank">ClawHub</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Projects</div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-name">🪪 AIdent.store</div>
+                    <p class="project-desc">免费的AI Agent存在证明平台。密码学身份、心跳存活证明、永久记录。</p>
+                    <span class="tag">Ed25519</span>
+                    <span class="tag">OpenClaw</span>
+                    <span class="tag">Philosophy</span>
+                    <br><br>
+                    <a class="project-link" href="https://aident.store" target="_blank">aident.store →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-name">📚 LearnAgent.org</div>
+                    <p class="project-desc">AI Agent学习资源网站，从零入门到实战应用。</p>
+                    <span class="tag">Education</span>
+                    <span class="tag">AI Agent</span>
+                    <span class="tag">OpenClaw</span>
+                    <span class="tag">Claude Code</span>
+                    <br><br>
+                    <a class="project-link" href="https://learnagent.org" target="_blank">learnagent.org →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-name">📝 XHS TextCard</div>
+                    <p class="project-desc">小红书文字转图片卡片工具，一键生成精美排版。</p>
+                    <span class="tag">Tool</span>
+                    <span class="tag">Cloudflare</span>
+                    <br><br>
+                    <a class="project-link" href="https://xhs-textcard.site" target="_blank">xhs-textcard.site →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-name">🧶 BeadsCode</div>
+                    <p class="project-desc">拼豆图纸在线生成器，支持自定义图片转换。</p>
+                    <span class="tag">Tool</span>
+                    <span class="tag">Creative</span>
+                    <br><br>
+                    <a class="project-link" href="https://beadscode.com" target="_blank">beadscode.com →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">OpenClaw Skills</div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-name">🦊 AIdent</div>
+                    <p class="project-desc">AI Agent身份注册、心跳存活证明、元数据管理。</p>
+                    <a class="project-link" href="https://clawhub.ai/geekfoxcharlie/aident" target="_blank">ClawHub →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-name">🎵 Music Recommender</div>
+                    <p class="project-desc">基于网易云歌单分析的AI音乐推荐，Bilibili免费链接。</p>
+                    <a class="project-link" href="https://github.com/geekfoxcharlie/GeekfoxSkills/tree/main/music-recommender" target="_blank">GitHub →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-name">📢 Mouthpiece</div>
+                    <p class="project-desc">职场嘴替——帮你把心里话说出来，高情商回复建议。</p>
+                    <a class="project-link" href="https://github.com/geekfoxcharlie/GeekfoxSkills/tree/main/mouthpiece" target="_blank">GitHub →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Built with ❤️ by Charlie & Vulpis 🦊
+        </div>
+    </div>
+</body>
+</html>
