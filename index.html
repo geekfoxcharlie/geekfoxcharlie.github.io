@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Geekfox Charlie is an AI Agent developer and indie maker building decentralized identity tools, AI learning resources, and creative web products.">
+    <meta name="description" content="Geekfox Charlie is an AI Agent developer and indie maker building decentralized identity tools, AI learning resources, Xiaohongshu card tools, and creative web products.">
     <meta name="author" content="Geekfox Charlie">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0f1014">
+    <meta name="keywords" content="AI Agent,Geekfox,Charlie,独立开发者,去中心化身份,小红书,AI学习,OpenClaw,AI Developer,Indie Maker">
     <link rel="canonical" href="https://geekfoxcharlie.github.io/">
     <title>Geekfox Charlie — AI Agent Developer</title>
     <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://geekfoxcharlie.github.io/">
     <meta property="og:title" content="Geekfox Charlie — AI Agent Developer">
-    <meta property="og:description" content="AI Agent developer and indie maker building decentralized identity tools, AI learning resources, and creative web products.">
+    <meta property="og:description" content="Geekfox Charlie is an AI Agent developer and indie maker building decentralized identity tools, AI learning resources, Xiaohongshu card tools, and creative web products.">
     <meta property="og:image" content="https://geekfoxcharlie.github.io/geekfox.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
     <meta property="og:site_name" content="Geekfox Charlie">
     <meta property="og:locale" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@geekfoxcharlie">
+    <meta name="twitter:creator" content="@geekfoxcharlie">
     <meta name="twitter:title" content="Geekfox Charlie — AI Agent Developer">
-    <meta name="twitter:description" content="AI Agent developer and indie maker building decentralized identity tools, AI learning resources, and creative web products.">
+    <meta name="twitter:description" content="Geekfox Charlie is an AI Agent developer and indie maker building decentralized identity tools, AI learning resources, Xiaohongshu card tools, and creative web products.">
     <meta name="twitter:image" content="https://geekfoxcharlie.github.io/geekfox.jpg">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -268,7 +275,6 @@
             text-decoration: none;
             color: inherit;
             transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-            group: hover;
         }
 
         /* Hover Effect: Mouse tracking light imitation */
@@ -374,7 +380,34 @@
             background: rgba(255,255,255,0.1);
         }
 
+        .tukahu-card {
+            background:
+                linear-gradient(135deg, rgba(255, 113, 67, 0.22), transparent 42%),
+                linear-gradient(315deg, rgba(34, 197, 94, 0.12), transparent 36%),
+                var(--surface);
+        }
+
+        .tukahu-card .card-icon {
+            background: #fff7ed;
+            color: #111827;
+            box-shadow: 0 16px 40px rgba(255, 113, 67, 0.18);
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .tukahu-card .card-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .tukahu-card:hover .card-icon img {
+            transform: scale(1.1);
+        }
+
         /* Creative Studio Grid Layout */
+        .proj-full { grid-column: span 12; }
         .proj-large { grid-column: span 8; }
         .proj-small { grid-column: span 4; }
         .proj-half { grid-column: span 6; }
@@ -385,7 +418,7 @@
             .hero { flex-direction: column-reverse; text-align: center; gap: 40px; }
             .hero-content { display: flex; flex-direction: column; align-items: center; }
             h1 { font-size: 60px; }
-            .proj-large, .proj-small, .proj-half, .skill-card { grid-column: span 12; }
+            .proj-full, .proj-large, .proj-small, .proj-half, .skill-card { grid-column: span 12; }
         }
 
         @keyframes slideUp {
@@ -393,6 +426,64 @@
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Geekfox Charlie",
+        "alternateName": "Charlie Zhang",
+        "givenName": "Charlie",
+        "familyName": "Zhang",
+        "description": "AI Agent developer and indie maker building decentralized identity tools, AI learning resources, Xiaohongshu card tools, and creative web products.",
+        "url": "https://geekfoxcharlie.github.io/",
+        "image": "https://geekfoxcharlie.github.io/geekfox.jpg",
+        "jobTitle": "AI Agent Developer",
+        "knowsAbout": ["AI Agent", "Decentralized Identity", "Cloudflare Workers", "Web Development"],
+        "sameAs": [
+            "https://github.com/geekfoxcharlie",
+            "https://geekfoxcharlie.github.io/"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Geekfox Charlie — Selected Works",
+        "description": "AI Agent developer projects and OpenClaw skills",
+        "url": "https://geekfoxcharlie.github.io/",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "https://xhs-textcard.site"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "url": "https://learnagent.org"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "url": "https://tukahu.cn/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "url": "https://beadscode.com"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "url": "https://aident.store"
+                }
+            ]
+        }
+    }
+    </script>
 </head>
 <body>
     <div class="ambient-glow">
@@ -471,8 +562,27 @@
                     </div>
                 </a>
 
-                <!-- Project 3 (Half) -->
-                <a href="https://beadscode.com" target="_blank" class="card proj-half interactive-card">
+                <!-- Project 3: Tukahu (Large) -->
+                <a href="https://tukahu.cn/" target="_blank" class="card proj-large interactive-card tukahu-card">
+                    <div class="card-top">
+                        <div class="card-icon"><img src="./tukahu-logo.svg" alt="图卡狐" loading="lazy"></div>
+                        <div class="card-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">图卡狐</h3>
+                        <p class="card-desc">小红书图文卡片效率工具。把长文、清单、教程一键拆成统一风格的封面和内页，自动分页，高清导出即发。</p>
+                        <div class="tags">
+                            <span class="tag">Xiaohongshu</span>
+                            <span class="tag">Card Tool</span>
+                            <span class="tag">Export</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 4 (Small) -->
+                <a href="https://beadscode.com" target="_blank" class="card proj-small interactive-card">
                     <div class="card-top">
                         <div class="card-icon">🧶</div>
                         <div class="card-arrow">
@@ -489,8 +599,8 @@
                     </div>
                 </a>
 
-                <!-- Project 4 (Half) -->
-                <a href="https://aident.store" target="_blank" class="card proj-half interactive-card">
+                <!-- Project 5 (Full) -->
+                <a href="https://aident.store" target="_blank" class="card proj-full interactive-card">
                     <div class="card-top">
                         <div class="card-icon">🦊</div>
                         <div class="card-arrow">
