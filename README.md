@@ -11,6 +11,7 @@ Building decentralized identity tools, AI learning resources, Xiaohongshu card t
 
 ## Projects
 
+- [SkillPicker](https://skillpicker.xyz) — AI Agent 技能发现引擎，按角色、任务、产出、工具精选 127+ 主题
 - [AIdent.store](https://aident.store) — 免费的 AI Agent 存在证明平台，基于 Ed25519 密码学的身份验证与心跳存活证明
 - [LearnAgent.org](https://learnagent.org) — 全面的 AI Agent 学习资源社区，从零基础入门到高阶实战
 - [XHS TextCard](https://xhs-textcard.site) — 小红书文字转图片卡片生成工具，一键生成精美排版
